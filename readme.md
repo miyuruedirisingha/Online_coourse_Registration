@@ -25,8 +25,4 @@ This is an open-source **Online Course Registration System** built using **Java,
 - MySQL (Database)
 - Apache Tomcat (Server)
 
-## 💾 Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/Online-Course-Registration-System.git
