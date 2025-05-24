@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    text-transform: capitalize;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #9A616D;
+    max-width: 1200px;
+    margin: auto;
+    padding: 12rem 0;
+    
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4%;
+    background: var(--main-color);
+    box-shadow: var(--box-shadow);
+}
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 80px;
+    width: 80px;
+    margin-right: 1rem;
+}
+
+.header .logo a {
+    font-size: 2.7rem;
+    font-weight: bolder;
+    color: var(--bg);
+    text-decoration: none;
+}
+.header .logo .home{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 10rem;
+    color: var(--bg);
+    padding-block: 1rem;
+    position: relative;
+    text-decoration: none;
+}
+.header .logo .home:hover{
+    color:var(--light-black);
+}
+.header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: var(--bg);
+    padding-block: 1rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.header .navbar a:hover {
+    color: var(--light-black);
+}
+
+.bg_image{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: #c6b3ff;
+    backdrop-filter: blur(7px);
+    align-items: center; 
+    border-radius: 5rem;
+    box-shadow: var(--box-shadow);
+
+}
+
+.bg_image .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.bg_image .container img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    width: 600px;
+    height: 450px;
+    
+}
+.bg_image .container h1{
+    font-size: 7.5rem;
+    font-weight: bolder;
+    color: #5c00b3;
+}
+.bg_image .container p{
+    font-size: 2rem;
+    color:#e600ac;
+}
+.btn_container{
+    text-align: right;
+}
+.btn {
+    display: inline-block;
+    margin-top: 3rem;
+    margin-right: 5rem;
+    padding: .8rem 2.8rem;
+    background:  #038f13;
+    border-radius: 1rem;
+    cursor: pointer;
+    color:  var(--bg);
+    font-size: 1.7rem;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--box-shadow); 
+    
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 1.7rem;
+    z-index: -1;
+    background: var(--main-color);
+    transition: .2s linear;
+    clip-path: circle(0% at 0% 5%);
+}
+
+.btn:hover::before {
+    clip-path: circle(100%);
+}
+.bg_image{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: #c6b3ff;
+    backdrop-filter: blur(7px);
+    align-items: center; 
+    border-radius: 5rem;
+    box-shadow: var(--box-shadow);
+
+}
+
+.bg_image .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.bg_image .container img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    width: 600px;
+    height: 450px;
+    
+}
+.bg_image .container h1{
+    font-size: 7.5rem;
+    font-weight: bolder;
+    color: #5c00b3;
+}
+.bg_image .container p{
+    font-size: 2rem;
+    color:#e600ac;
+}
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-toggle {
+    color: black;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c6b3ff;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content .dropdown-item {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content .dropdown-item:hover {
+    background-color: plum;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
